@@ -22,8 +22,8 @@ To enable access to the CUDA compiler (nvcc) during `docker build` operations, a
 You will then want to restart the Docker service or reboot your system before proceeding.
 
 ## Building the Containers
-
-``` sh docker_build.sh ``` <br/>
+``` $cp /etc/apt/trusted.gpg.d/jetson-ota-public.asc .``` <br/>
+``` $sh docker_build.sh ``` <br/>
 Once you sucessfully build, you will have a ros2-eloquent container with all necessary packages required for this repository.<br/>
 
 

@@ -1,4 +1,5 @@
 # ros2_trt_pose
+[NVIDIA Developer Blog](https://developer.nvidia.com/blog/implementing-robotics-applications-with-ros-2-and-ai-on-jetson-platform-2/)
 
 In this repository, we build ros2 wrapper for [trt_pose](https://github.com/NVIDIA-AI-IOT/trt_pose) for real-time pose estimation on NVIDIA Jetson.
 
@@ -11,8 +12,8 @@ In this repository, we build ros2 wrapper for [trt_pose](https://github.com/NVID
 ![alt text](images/detected_output.png "Output from ros2_trt_pose")
 
 ## Requirements:
-- ROS2 Eloquent: <br/>
-    - [Docker for Jetson](https://github.com/dusty-nv/jetson-containers#ros-containers) <br/>
+- ROS 2 Eloquent: <br/>
+    - [Docker Support](https://github.com/NVIDIA-AI-IOT/ros2_trt_pose/blob/main/docker/README.md) <br/>
     - [Install Instructions](https://index.ros.org/doc/ros2/Installation/Eloquent/Linux-Development-Setup/) <br/>
 - trt_pose
     - [Dependencies for trt_pose](https://github.com/NVIDIA-AI-IOT/trt_pose#step-1---install-dependencies) <br/>
@@ -22,7 +23,7 @@ In this repository, we build ros2 wrapper for [trt_pose](https://github.com/NVID
 - Clone repository under ros2 workspace <br/>
 ```
 $ cd ros2_ws/src/
-$ git clone https://gitlab-master.nvidia.com/ameykulkarni/ros2_trt_pose.git
+$ git clone https://github.com/NVIDIA-AI-IOT/ros2_trt_pose.git
 ```
 - Install requirements using ```rosdep``` <br/>
 ```
@@ -64,4 +65,9 @@ $ source install/local_setup.sh
         ```
         $ ros2 run rviz2 rviz2 launch/pose_estimation.rviz
         ```
+
+## Other related ROS 2 projects
+- [ros2_torch_trt](https://github.com/NVIDIA-AI-IOT/ros2_torch_trt) : ROS2 Real Time Classification and Detection <br/>
+- [ros2_deepstream](https://github.com/NVIDIA-AI-IOT/ros2_deepstream) : ROS2 nodes for DeepStream applications <br/>
+- [ros2_jetson_stats](https://github.com/NVIDIA-AI-IOT/ros2_jetson_stats) : ROS 2 package for monitoring and controlling NVIDIA Jetson Platform resources <br/>
 
