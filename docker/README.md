@@ -24,6 +24,10 @@ You will then want to restart the Docker service or reboot your system before pr
 ## Building the Containers
 ``` $cp /etc/apt/trusted.gpg.d/jetson-ota-public.asc .``` <br/>
 ``` $sh docker_build.sh ``` <br/>
+
+If you face an error at ```COPY jetson-ota-public.asc /etc/apt/trusted.gpg.d/jetson-ota-public.asc```
+Copy ``` jetson-ota-public.asc ``` from ``` /etc/apt/trusted.gpg.d ``` to your current directory with ```docker_build```
+
 Once you sucessfully build, you will have a ros2-eloquent container with all necessary packages required for this repository.<br/>
 
 
